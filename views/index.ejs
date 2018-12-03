@@ -5,6 +5,13 @@
         <title>Document</title>
     </head>
     <body>
-        <%= data %>
+        <a href="/create">Add</a>
+        <ul>
+            <% arr.forEach(function(item){ %>
+                <li>
+                    <%= item %>
+                </li>
+            <% }); %>
+        </ul>
     </body>
 </html>
